@@ -8,5 +8,15 @@ public class Controladora {
 		Scanner lector = new Scanner(new FileWriter("form.txt"));
 		
 		escritor.println(generador.imprimirEncabezado());
+
+		escritor.println(generador.imprimirTexto("Un gatito!"));
+		escritor.println(generador.insertarImagen("gato.jpg"));
+		
+		while(lector.hasNext())	{
+			escritor.println(lector.nextLine());
+		}
+		escritor.println(generador.imprimirCierre());
+		lector.close();
+		escritor.close();
 	}
 }
