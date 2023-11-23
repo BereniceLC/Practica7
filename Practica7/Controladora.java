@@ -16,10 +16,10 @@ public class Controladora {
 
 			DataInputStream	lector = new DataInputStream(new FileInputStream("hola.bin"));
 
-			System.out.println(lector.readInt());
-			System.out.println(lector.readChar());
 			System.out.println(lector.readChar());
 			System.out.println(lector.readShort());
+			System.out.println(lector.readInt());
+			System.out.println(lector.readChar());
 
 			escritor.close();
 
