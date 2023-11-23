@@ -23,7 +23,7 @@ public class Controladora {
 			escritor.close();
 			
 		}catch(FileNotFoundException e) {
-			e.printStackTrace();
+			System.out.println("No funca!");
 		}
 	}
 }
